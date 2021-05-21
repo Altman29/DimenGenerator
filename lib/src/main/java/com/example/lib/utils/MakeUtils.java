@@ -18,7 +18,7 @@ public class MakeUtils {
     //生成正常min-max
     private static final String XML_DIMEN_TEMPLETE = "<dimen name=\"%1$sdp_%2$d\">%3$.2fdp</dimen>\r\n";
     //生成0.5
-    // private static final String XML_DIMEN_TEMPLETE = "<dimen name=\"%1$sdp_0_5\">%3$.2fdp</dimen>\r\n";
+    // private static final String XML_DIMEN_TEMPLETE = "<dimen name=\"%1$sdp_1_5\">%3$.2fdp</dimen>\r\n";
 
 
     private static final String XML_BASE_DPI = "<dimen name=\"zeen_dpi\">%ddp</dimen>\r\n";
@@ -61,8 +61,8 @@ public class MakeUtils {
                 sb.append(temp);
             }
             //生成0.5
-            // dpValue = px2dip((float) 0.5, type.getSwWidthDp(), designWidth);
-            // temp = String.format(XML_DIMEN_TEMPLETE, "", 0.5, dpValue);
+            // dpValue = px2dip((float) 1.5, type.getSwWidthDp(), designWidth);
+            // temp = String.format(XML_DIMEN_TEMPLETE, "", 1.5, dpValue);
             // sb.append(temp);
 
             sb.append(XML_RESOURCE_END);
